@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""2-2-measure_runtime module"""
+"""2-measure_runtime module"""
 import asyncio
 import time
 
 
-wait_n = __import__('1-concurrent_coroutines.py').wait_n
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
 async def measure_time(n: int, max_delay: int) -> float:
